@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Botanic Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">🌿 Botanic Café</div>
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+    <nav>
+      <ul>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#concept">コンセプト</a></li>
+        <li><a href="#access">アクセス</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/cafe.png" alt="植物が豊富なカフェの外観" class="hero-img" />
+    <h1>自然と調和した癒しの空間</h1>
+  </section>
+
+  <section id="menu" class="menu fade-in">
+    <h2>おすすめメニュー</h2>
+    <div class="menu-grid">
+      <!-- メニューカードを4つ表示 -->
+      <div class="item">
+        <img src="images/matcha.jpg" alt="抹茶ラテ" />
+        <p><strong>抹茶ラテ</strong></p>
+        <p>香り豊かな抹茶とミルクがやさしくとけ合う、癒しの一杯。<br>ほっと一息つきたいときにおすすめです。</p>
+      </div>
+      <div class="item">
+        <img src="images/basil.jpg" alt="バジルサンド" />
+        <p><strong>バジルサンド</strong></p>
+        <p>爽やかなバジルの香りが食欲をそそる、具材たっぷりのサンドイッチ。<br>ランチや軽食にぴったり。</p>
+      </div>
+      <div class="item">
+        <img src="images/harbtea.jpg" alt="ハーブティー" />
+        <p><strong>ハーブティー</strong></p>
+        <p>自然の恵みいっぱいのハーブティー。<br>気分に合わせて選べる種類もご用意しています。</p>
+      </div>
+      <div class="item">
+        <img src="images/green.jpg" alt="グリーンスムージー" />
+        <p><strong>グリーンスムージー</strong></p>
+        <p>旬の野菜とフルーツをぎゅっと詰め込んだ栄養満点の一杯。<br>朝のスタートやリフレッシュにどうぞ。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="concept" class="concept fade-in">
+    <h2>カフェのこだわり</h2>
+    <div class="concept-content">
+      <img src="images/cafe_inner.jpg" alt="店内の観葉植物" class="concept-img" />
+      <div class="concept-text">
+        <p>店内には観葉植物が溢れ、すべてのインテリアは天然素材で構成。<br>木の温もりと緑に囲まれた空間で、ゆったりとした時間をお過ごしいただけます。</p>
+        <p>「自然と人が調和する場所」をコンセプトに、心地よい音楽と季節の香りが溶け込む店内を演出。<br>大切な人との時間にも、仕事の合間のひとときにも。癒しをお届けします。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="access" class="access fade-in">
+    <h2>アクセス情報</h2>
+    <p>〒123-4567 東京都グリーンタウン2-3-4<br>営業時間：10:00〜18:00（水曜定休）</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?...省略URL..." width="100%" height="300" style="border:0;" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Botanic Café</p>
+  </footer>
+
+  <button id="to-top" class="to-top">↑ TOP</button>
+  <script src="script.js"></script>
+</body>
+</html>
