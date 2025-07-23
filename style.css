@@ -57,16 +57,19 @@ nav a {
 .hero::after {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.2));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
   z-index: 1;
 }
 
 .hero h1 {
   position: absolute;
   font-size: 45px;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   padding: 1rem;
@@ -74,7 +77,8 @@ nav a {
   font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
   font-weight: 600;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  width: 60%;
 }
 
 /* --- メニューセクション --- */
@@ -94,7 +98,7 @@ nav a {
   padding: 1rem;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
@@ -123,7 +127,8 @@ nav a {
 }
 
 /* --- コンセプト＆アクセス --- */
-.concept, .access {
+.concept,
+.access {
   padding: 2rem;
 }
 
@@ -138,7 +143,7 @@ nav a {
   width: 100%;
   max-width: 400px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .concept-text {
@@ -152,7 +157,7 @@ nav a {
   margin-top: 1rem;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* --- フッター --- */
@@ -203,9 +208,14 @@ footer {
 }
 
 /* --- モバイル表示調整 --- */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  .logo {
+    font-size: 1rem;
+  }
+
   .hero h1 {
-    font-size: 28px;
+    font-size: 1.5rem;
+    width: 80%;
     padding: 0.5rem;
   }
 
@@ -243,7 +253,7 @@ footer {
     width: 100%;
     background-color: #a3c9a8;
     padding: 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     z-index: 9;
   }
 
@@ -252,8 +262,9 @@ footer {
   }
 
   nav a {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
+
   .menu-toggle {
     z-index: 10;
   }
